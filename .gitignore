@@ -2,3 +2,10 @@
 *.css.map
 *.sass.map
 *.scss.map
+*.log
+*.zip
+.vscode/
+.vs/
+node_modules/
+/.cache/
+
