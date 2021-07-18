@@ -36,13 +36,16 @@ body {
     a {
         color: $color_cyan;
         text-decoration: none;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
     }
     a, select, input, button {
         &:hover, &:focus {
             outline: none;
             box-shadow: none;
         }
-    }    
+    }
     ul {
         margin: 0;
         padding-left: 0;
@@ -53,5 +56,5 @@ body {
     img {
         max-width: 100%;
     }
-   
+
 }
