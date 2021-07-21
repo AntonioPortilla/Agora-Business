@@ -4,7 +4,7 @@ body {
 		section {
             &.section-banner {
                 width: 100%;
-                height: 500px;
+                height: 600px;
                 position: relative;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -18,6 +18,20 @@ body {
                     opacity: .3;
                     background: #000000;
                 }
+                .container {
+                    height: 100%;
+                    .row {
+                        height: 100%;
+                        z-index: 1;
+                        position: relative;
+                        color: $color_white;
+                        padding-right: 100px;
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
             }
         }
 	}

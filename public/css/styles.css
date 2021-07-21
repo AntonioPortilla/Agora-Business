@@ -14,7 +14,7 @@ html {
   position: relative; }
 
 body {
-  font-family: Barlow,sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   background-color: #eaeded;
   height: 100%; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -51,6 +51,8 @@ header {
   left: 0;
   right: 0;
   z-index: 3; }
+  header a.logo img {
+    max-width: 200px; }
   header nav ul.nav-pills li.nav-item a.nav-link {
     color: #fff; }
     header nav ul.nav-pills li.nav-item a.nav-link span {
@@ -93,7 +95,7 @@ header {
 
 body.home section.section-banner {
   width: 100%;
-  height: 500px;
+  height: 600px;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -106,3 +108,13 @@ body.home section.section-banner {
     content: '';
     opacity: .3;
     background: #000000; }
+  body.home section.section-banner .container {
+    height: 100%; }
+    body.home section.section-banner .container .row {
+      height: 100%;
+      z-index: 1;
+      position: relative;
+      color: #fff;
+      padding-right: 100px; }
+      body.home section.section-banner .container .row p {
+        font-size: 20px; }

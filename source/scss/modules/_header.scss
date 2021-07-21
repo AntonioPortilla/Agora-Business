@@ -5,6 +5,11 @@ header {
     left: 0;
     right: 0;
     z-index: 3;
+    a.logo {
+        img {
+            max-width: 200px;
+        }
+    }
     nav {
         ul.nav-pills {
             li.nav-item {
