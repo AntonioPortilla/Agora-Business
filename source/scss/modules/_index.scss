@@ -142,7 +142,7 @@ body {
             &.section-slider {
                 padding: 50px 0;
                 text-align: center;
-				
+
                 /*.content-slider {
                     max-width: 980px;
                     width: 100%;
@@ -221,6 +221,122 @@ body {
                         }
                     }
                 }*/
+            }
+            &.section-primera-asesoria{
+                transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                padding: 80px 0px 80px 0px;
+                background-color: #1D3157;
+                background-image: url(../images/asesoria-gratuita.jpg);
+                background-position: center left;
+                background-repeat: no-repeat;
+                background-size: 60vw auto;
+                .asesoria-overlay {
+                    background-color: transparent;
+                    background-image: linear-gradient(270deg, $color_blue 50%, rgba(56, 125, 255, 0.48) 100%);
+                    opacity: 1;
+                    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                }
+                .content-asesoria {
+                    //width: 100%;
+                    margin: 0% 0% 0% 50%;
+                    position: relative;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    h6 {
+                        color: #D2E2FF;
+                        padding-left: 0;
+                    }
+                    p {
+                        color: $color_white;
+                        padding-left: 0;
+                        font-size: 32px;
+                        font-weight: 700;
+                        margin-bottom: 31px;
+                    }
+                    a {
+                        background-color: rgba(247, 250, 255, 0);
+                        border-style: solid;
+                        border-width: 1px 1px 1px 1px;
+                        border-color: #D2E2FF;
+                        box-shadow: 0px 8px 16px -8px rgba(56, 125, 255, .5);
+                        color: $color_white;
+                        display: inline-flex;
+                        align-items: center;
+                        padding: 11px 19px;
+                        width: auto;
+                        span {
+                            font-weight: 900;
+                        }
+                        &:hover {
+                            color: $color_blue;
+                            background-color: $color_white;
+                        }
+                    }
+                }
+            }
+            &.section-contact {
+                position: relative;
+                margin-bottom: 100px;
+                .contact-header {
+                    background-color: $color_blue;
+                    color: $color_white;
+                    border-radius: 6px 6px 0px 0px;
+                    display:flex;
+                    justify-content: space-between;
+                    padding: 40px;
+                    span {
+                        background-color: rgba(255, 255, 255, 0.16);
+                        color: #FFFFFF;
+                        -webkit-border-radius: 50%;
+                        border-radius: 50%;
+                        width: 64px;
+                        height: 64px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            width: 32px;
+                        }
+                    }
+                    .box-wrapper {
+                        display:flex;
+                        .box-content {
+                            padding-left: 12px;
+                            p {
+                                color: #D2E2FF;
+                            }
+                        }
+                    }
+                }
+                .contact-body {
+                    background-color: $color_white;
+                    box-shadow: 0px 0px 80px -16px rgba(0, 0, 0, .16);
+                    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                    border-radius: 0px 0px 6px 6px;
+                    h3 {
+                        margin-bottom: 20px;
+                    }
+                    .content-form {
+                        padding: 40px 40px 24px 40px;
+                        .form-control {
+                            margin-bottom: 20px;
+                            background-color: #F6F6F6;
+                            border: 1px solid #818a91;
+                            font-weight: 600;
+                            min-height: 45px;
+                        }
+                        button {
+                            background-color: $color_blue;
+                            padding: .7rem 1.2rem;
+                        }
+                    }
+                }
             }
         }
 	}
