@@ -3,41 +3,58 @@ var home = (function () {
 
     var menu = function () {
 
+        var _menuServicios = $('#menuServicios'),
+        _menuContact = $('#menuContact'),
+        _menuSedes = $('#menuSedes'),
+        _menuHome = $('#menuHome');
+
+        _menuHome.on('click', function () {
+            //e.preventDefault();
+            $('#menuContent li a').removeClass('active');
+            $(this).addClass('active');
+            $('html, body').animate({
+                scrollTop: $("#header").offset().top
+            }, 500);
+            return true;
+        });
+
+        _menuServicios.on('click', function () {
+            //e.preventDefault();
+            $('#menuContent li a').removeClass('active');
+            $(this).addClass('active');
+            $('html, body').animate({
+                scrollTop: $("#sectionServices").offset().top
+            }, 500);
+            return true;
+        });
+
+        _menuContact.on('click', function (e) {
+            e.preventDefault();
+            $('#menuContent li a').removeClass('active');
+            $(this).addClass('active');
+            $('html, body').animate({
+                scrollTop: $("#sectionContact").offset().top
+            }, 500);
+            return true;
+        });
+
+        _menuSedes.on('click', function (e) {
+            e.preventDefault();
+            $('#menuContent li a').removeClass('active');
+            $(this).addClass('active');
+            $('html, body').animate({
+                scrollTop: $("#sectionSedes").offset().top
+            }, 500);
+            return true;
+        });
+
     }
 
-    var sliderHome = function() {
 
-        /*$('#contentSlider').slick({
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 5,
-            responsive: [
-              {
-                breakpoint: 768,
-                settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '40px',
-                  slidesToShow: 3
-                }
-              },
-              {
-                breakpoint: 480,
-                settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '40px',
-                  slidesToShow: 1
-                }
-              }
-            ]
-          });*/
-    }
 
     return {
         init: function () {
             menu();
-            sliderHome();
         },
     }
 })()
